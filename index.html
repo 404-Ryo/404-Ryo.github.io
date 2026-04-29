@@ -60,10 +60,10 @@
     width: 36px; height: 36px;
     border: 2px solid var(--paper);
     border-radius: 50%;
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), width 0.3s, height 0.3s, border-color 0.3s;
+    transition: transform 0.08s ease, width 0.2s, height 0.2s, border-color 0.3s;
   }
-  .cursor-hover .cursor-dot { transform: scale(0); }
-  .cursor-hover .cursor-ring { width: 60px; height: 60px; background: var(--yellow); border-color: var(--yellow); }
+  .cursor-hover .cursor-dot { transform: scale(1); }
+  .cursor-hover .cursor-ring { width: 36px; height: 36px; }
 
   @media (max-width: 768px), (hover: none) {
     body { cursor: auto; }
@@ -1338,20 +1338,20 @@
         <div class="contact-value">@404-Ryo</div>
       </a>
 
-      <a href="https://x.com/" target="_blank" rel="noopener" class="contact-item" data-color="x" data-hover>
+      <a href="https://x.com/tanchan_46" target="_blank" rel="noopener" class="contact-item" data-color="x" data-hover>
         <div class="contact-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
         </div>
         <div class="contact-label">X (Twitter)</div>
-        <div class="contact-value" data-i18n="contact.x">@your_handle</div>
+        <div class="contact-value" data-i18n="contact.x">@tanchan_46</div>
       </a>
 
-      <a href="mailto:contact@example.com" class="contact-item" data-color="mail" data-hover>
+      <a href="mailto:ppajt5zzcf@gmail.com" class="contact-item" data-color="mail" data-hover>
         <div class="contact-icon">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
         </div>
         <div class="contact-label">Email</div>
-        <div class="contact-value" data-i18n="contact.mail">contact@example.com</div>
+        <div class="contact-value" data-i18n="contact.mail">ppajt5zzcf@gmail.com</div>
       </a>
     </div>
 
@@ -1416,8 +1416,8 @@
       "works.w5.role": "Tester / Lead Documenter",
       "contact.title": "Let's<br><span class='italic'>talk.</span>",
       "contact.desc": "インターンシップ・採用・コラボレーションのご相談、お気軽にどうぞ。",
-      "contact.x": "@your_handle",
-      "contact.mail": "contact@example.com",
+      "contact.x": "@tanchan_46",
+      "contact.mail": "ppajt5zzcf@gmail.com",
       "footer.made": "Made with ♥ + ☕ + 🎵"
     },
     en: {
@@ -1471,8 +1471,8 @@
       "works.w5.role": "Tester / Lead Documenter",
       "contact.title": "Let's<br><span class='italic'>talk.</span>",
       "contact.desc": "Open to internships, full-time roles, and collaborations. Drop a line — I'd love to hear from you.",
-      "contact.x": "@your_handle",
-      "contact.mail": "contact@example.com",
+      "contact.x": "@tanchan_46",
+      "contact.mail": "ppajt5zzcf@gmail.com",
       "footer.made": "Made with ♥ + ☕ + 🎵"
     }
   };
@@ -1508,8 +1508,8 @@
   });
 
   function animateRing() {
-    ringX += (mouseX - ringX) * 0.18;
-    ringY += (mouseY - ringY) * 0.18;
+    ringX += (mouseX - ringX) * 0.6;
+    ringY += (mouseY - ringY) * 0.6;
     ring.style.transform = `translate(${ringX - 18}px, ${ringY - 18}px)`;
     requestAnimationFrame(animateRing);
   }
