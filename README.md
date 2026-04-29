@@ -9,5 +9,5 @@ Ryo Nishikawa の個人ポートフォリオサイトです。スキルや作品
 ## 使用技術
 
 - HTML / CSS
-- Google Fonts（Syne, Noto Sans JP）
+- Google Fonts（Inter, Lora, JetBrains Mono, Noto Sans JP）
 
